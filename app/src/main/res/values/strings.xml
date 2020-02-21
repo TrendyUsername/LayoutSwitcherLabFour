@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LayoutSwitcherLabFour</string>
+    <string name="one">"Four squares"</string>
+    <string name="two">"Bad tetris"</string>
+    <string name="three">"Colored guideline"</string>
+    <string name="four">"Layout sandwich"</string>
+    <string name="five">"Button with long sandwich"</string>
+    <string name="six">"Button shop"</string>
+    <string name="seven">"check me"</string>
+</resources>
