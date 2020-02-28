@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.Guideline
@@ -9,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04"/>
+        app:layout_constraintGuide_percent="0.25"/>
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -34,48 +35,42 @@
         app:layout_constraintGuide_percent="0.96"/>
 
     <TextView
-        android:id="@+id/topLeft"
+        android:id="@+id/topText"
+        app:layout_constraintLeft_toRightOf="@id/leftLine"
+        app:layout_constraintTop_toBottomOf="@id/topLine"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/test"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/topLine"
-        app:layout_constraintLeft_toRightOf="@id/leftLine"
-        />
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/test"/>
+
+    <Button
+        android:id="@+id/top"
+        android:text="@string/layout_four"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/topLine"
+        app:layout_constraintLeft_toLeftOf="@id/leftLine"
+        android:layout_marginTop="200dp"/>
 
     <TextView
-        android:id="@+id/topRight"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/test"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="320dp"
-        app:layout_constraintLeft_toRightOf="@id/leftLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:text="@string/layout_three_top_view"
+        app:layout_constraintLeft_toLeftOf="@id/leftLine"
+        app:layout_constraintRight_toLeftOf="@id/rightLine"
         app:layout_constraintTop_toBottomOf="@id/topLine"/>
 
 
     <TextView
-        android:id="@+id/bottomLeft"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/test"
-        android:layout_marginTop="680dp"
-        android:layout_marginStart="40dp"
-        app:layout_constraintLeft_toRightOf="@id/leftLine"
-        app:layout_constraintBottom_toTopOf="@id/bottomLine"/>
-
-    <TextView
-        android:id="@+id/bottomRight"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/test"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="680dp"
-        app:layout_constraintTop_toBottomOf="@id/topLine"
-        app:layout_constraintLeft_toRightOf="@id/leftLine"/>
-
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/layout_three_bottom_view"
+        android:layout_marginTop="580dp"
+        app:layout_constraintLeft_toLeftOf="@id/leftLine"
+        app:layout_constraintRight_toLeftOf="@id/rightLine"
+        app:layout_constraintTop_toBottomOf="@id/topLine"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
